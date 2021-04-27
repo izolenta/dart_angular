@@ -16,6 +16,8 @@ class SomeReducer {
     return _reducer(state, action);
   }
 
-  SomeState _onSomeAction(SomeState state, SomeAction action) =>
-      state.rebuild((s) => s);
+  SomeState _onSomeAction(SomeState state, SomeAction action) {
+    return state.rebuild((s) => s);
+  }
+
 }
