@@ -16,6 +16,4 @@ class SomeEffects {
   Stream<Object> _onSomeAction(Stream<SomeAction> actions, EpicStore<SomeState> store) =>
       Observable(actions).asyncExpand((action) async* {
       });
-
-
 }
