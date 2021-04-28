@@ -1,8 +1,6 @@
 import 'package:angular/angular.dart';
-import 'package:angular_redux/angular_redux.dart';
 import 'package:dart_angular/components/note_component/note_component.dart';
-import 'package:dart_angular/redux/action/some_action.dart';
-import 'package:dart_angular/redux/some_dispatcher.dart';
+import 'package:dart_angular/redux/pipes/some_select_pipe.dart';
 import 'package:dart_angular/redux/some_providers.dart';
 import 'package:dart_angular/state/note_data.dart';
 import 'package:dart_angular/state/some_state.dart';
@@ -18,9 +16,7 @@ import 'package:dart_angular/state/some_state.dart';
     NoteComponent,
     NgFor
   ],
-  pipes: [
-    SelectPipe,
-  ],
+  pipes: [SomeSelectPipe],
   changeDetection: ChangeDetectionStrategy.OnPush
 )
 
